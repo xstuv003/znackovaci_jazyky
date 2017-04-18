@@ -1,0 +1,494 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+  <!-- Odkaz na github: https://github.com/xstuv003/znackovaci_jazyky -->
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="Author" content="Václav Studený">
+  <title>HTML dokumentace k semestrální práci - nastavení hry wt- </title>     
+  </head>
+  <body>
+    <div class="container">
+    <nav>
+      <h3>Hlavní menu:</h3>
+      <ul>
+        <li><a href="#uvod">Úvod</a></li>
+        <li><a href="#metodika">Metodika</a></li>
+        <li><a href="#popis">Popis elementů a atributů</a></li>
+        <li><a href="#transf">Popis transformace</a></li>
+        <li><a href="#zaver">Závěr</a></li>
+      </ul>
+      <hr />
+    </nav>
+    <main>
+      <section id="uvod">
+        <article>
+          <header>
+            <h2>Úvod</h2>
+          </header>          
+          <p>Moje semestrální práce se zabývá predevším XML souborem, kde je nastavení aplikace WarThunder. Nastavení aplikace Warthunder jsem si zvolil, jelikož mě dříve tato hra dost zaujala. Protože je hra velmi rozsáhlá, použil jsem její config nastavení a přepsal do XML souboru, který se potom využívá v této semestrální práci</p>
+        </article>
+      </section>
+      <section id="metodika">
+        <article>
+          <header>
+            <h2>Metodika</h2>
+          </header>
+          <h3>Programy</h3>
+          <p>
+          Použité programy<a href="https://https://netbeans.org/downloads/">Netbeans</a>, <a href="http://www.pspad.com/cz/">PSPad</a>, <a href="https://www.mozilla.org/cs/firefox/new/">Mozilla Firefox</a>, <a href="https://www.google.com/chrome/">Google Chrome</a> a  <a href="http://xml-copy-editor.sourceforge.net/">XML copy editor</a>  
+          </p>
+          <h3>Využité webové stránky</h3>
+          <p><a href="https://www.w3schools.com/">W3Schools</a>, 
+            <a href="https://validator.w3.org/">oficální validátor W3</a>
+            <a href="https://github.com/">github</a></p>        
+        </article>
+      </section>
+      <section id="popis" >
+        <article>
+          <header>
+            <h2>Popis elementů a atributů</h2>
+          </header>
+          <h3> Elementy</h3>
+          <table border="1" id="elementy" title="Tabulka elementů">
+            <tr>
+              <td><b>Název</b></td>
+              <td><b>Popis </b></td>
+              <td><b>Restriction</b></td>
+            </tr>
+            <tr>                       
+              <td>settings</td>
+              <td>Obal celého nastavení</td>
+              <td>Žádné</td>
+            </tr>
+            <tr>                       
+              <td>preset1</td>
+              <td>Preset nastavení č.1</td>
+              <td>Žádné</td>
+            </tr> 
+            <tr>                       
+              <td>game</td>
+              <td>Verze hry a povolení console, obal pro ui a units</td>
+              <td>Žádné</td>
+            </tr>
+            <tr>                       
+              <td>ui</td>
+              <td>Určuje ui scale</td>
+              <td>Žádné</td>
+            </tr>
+            <tr>                       
+              <td>units</td>
+              <td>Určuje jestli je používán imperiální nebo metrický systém </td>
+              <td>Žádné</td>
+            </tr>
+            <tr>                       
+              <td>multiplayer</td>
+              <td>Nastavení portu, obaluje mutltiplayerové nastavení</td>
+              <td>Žádné</td>
+            </tr>
+            <tr>                       
+              <td>chat</td>
+              <td>Povolení, zakázání chatu</td>
+              <td>0, 1</td>
+            </tr>
+            <tr>                       
+              <td>server</td>
+              <td>Výběr mezi evropským a americkým serverem</td>
+              <td>Žádné</td>
+            </tr>
+            <tr>                       
+              <td>maxping</td>
+              <td>Hodnota maximálního pingu ve hře</td>
+              <td>Žádné</td>
+            </tr>
+            <tr>                       
+              <td>graphics</td>
+              <td>Obal pro nastavení grafiky</td>
+              <td>Žádné</td>
+            </tr> 
+            <tr>                       
+              <td>display</td>
+              <td>Obal pro nastavení displaye</td>
+              <td>Žádné</td>
+            </tr>
+            <tr>                       
+              <td>resolution</td>
+              <td>Rozlišení</td>
+              <td>Žádné</td>
+            </tr>
+            <tr>                       
+              <td>mode</td>
+              <td>Mód obrazovky v jakém bude hra spuštěna</td>
+              <td>Žádné</td>
+            </tr>
+            <tr>                       
+              <td>gamma</td>
+              <td>nastavení gammy</td>
+              <td>0,100</td>
+            </tr>
+            <tr>                       
+              <td>brightness</td>
+              <td>Nastavení jasu</td>
+              <td>0,100</td>
+            </tr>
+            <tr>                       
+              <td>colorblind_mode</td>
+              <td>Povolení, zakázání módu pro barvoslepé</td>
+              <td>0, 1</td>
+            </tr>
+            <tr>                       
+              <td>vertical_sync</td>
+              <td>Povolení, zakázání vertikální sychnronizace</td>
+              <td>0, 1</td>
+            </tr>
+            <tr>                       
+              <td>anisotropy</td>
+              <td>Nastavení anisotropie</td>
+              <td>Žádné</td>
+            </tr>
+            <tr>                       
+              <td>anti_aliasing</td>
+              <td>Nastavení anti-aliasingu</td>
+              <td>Žádné</td>
+            </tr>
+            <tr>                       
+              <td>texture_quality</td>
+              <td>Nastavení kvality textur</td>
+              <td>Žádné</td>
+            </tr>
+            <tr>                       
+              <td>shadow_quality</td>
+              <td>Nastavení kvality stínů</td>
+              <td>Žádné</td>
+            </tr>
+            <tr>                       
+              <td>terrain_quality</td>
+              <td>Nastavení kvality terénů</td>
+              <td>0, 100</td>
+            </tr>
+            <tr>                       
+              <td>render_resolution</td>
+              <td>Nastavení hodnoty renderu</td>
+              <td>1, 100</td>
+            </tr>
+            <tr>                       
+              <td>tree_range</td>
+              <td>Nastavení kvality stromů</td>
+              <td></td>
+            </tr>
+            <tr>                       
+              <td>particle_density</td>
+              <td>Nastavení hustoty částic</td>
+              <td>0, 100</td>
+            </tr>
+            <tr>                       
+              <td>grass</td>
+              <td>Nastavení trávy</td>
+              <td>0, 100</td>
+            </tr>
+            <tr>                       
+              <td>ssao_quality</td>
+              <td>Nastavení SSAO kvality</td>
+              <td>0, 100</td>
+            </tr>
+            <tr>                       
+              <td>reflections_quality</td>
+              <td>Nastavení kvality odrazů</td>
+              <td>0, 100</td>
+            </tr>
+            <tr>                       
+              <td>water_reflections</td>
+              <td>Nastavení kvality vody</td>
+              <td>0, 100</td>
+            </tr>
+            <tr>                       
+              <td>terrain_deformation</td>
+              <td>Nastavení deformování terénu</td>
+              <td>0, 100</td>
+            </tr>
+            <tr>                       
+              <td>tire_tracks</td>
+              <td>Nastavení stop po kolech</td>
+              <td>Žádné</td>
+            </tr>   
+            <tr>                       
+              <td>foam_quality</td>
+              <td>Nastavení foam kvality</td>
+              <td>Žádné</td>
+            </tr> 
+            <tr>                       
+              <td>cloud_quality</td>
+              <td>Nastavení kvality mraků</td>
+              <td>0, 100</td>
+            </tr>
+            <tr>                       
+              <td>clouds</td>
+              <td>Nastavení četnosti mraků</td>
+              <td>0, 100</td>
+            </tr>
+            <tr>                       
+              <td>physics_quality</td>
+              <td>Nastavení physics kvality</td>
+              <td>0, 100</td>
+            </tr>
+            <tr>                       
+              <td>shadows</td>
+              <td>Povolení, zakázání stínů</td>
+              <td>0, 1</td>
+            </tr>
+            <tr>                       
+              <td>object_shadows</td>
+              <td>Povolení, zakázání stíny objektů</td>
+              <td>0, 1</td>
+            </tr>
+            <tr>                       
+              <td>advanced_shore</td>
+              <td>Povolení, zakázání detalního pobřeží</td>
+              <td>0, 1</td>
+            </tr>
+            <tr>                       
+              <td>fx_reflections</td>
+              <td>Povolení, zakázání efektů odrazů</td>
+              <td>0, 1</td>
+            </tr>
+            <tr>                       
+              <td>ripple_effect</td>
+              <td>Povolení, zakázání ripple efektu</td>
+              <td>0, 1</td>
+            </tr>
+            <tr>                       
+              <td>haze</td>
+              <td>Povolení, zakázání efektu horkého vzduchu</td>
+              <td>0, 1</td>
+            </tr>
+            <tr>                       
+              <td>soft_particles</td>
+              <td>Povolení, zakázání měkkých částic</td>
+              <td>0, 1</td>
+            </tr>
+            <tr>                       
+              <td>terrain_far_details</td>
+              <td>Povolení, zakázání detailů vzádelého terénu</td>
+              <td>0, 1</td>
+            </tr>
+            <tr>                       
+              <td>lens_flares</td>
+              <td>Povolení, zakázání odlesků v objektivu</td>
+              <td>0, 1</td>
+            </tr>
+            <tr>                       
+              <td>suspension_animation</td>
+              <td>Povolení, zakázání animací odpružení</td>
+              <td>0, 1</td>
+            </tr>
+            <tr>                       
+              <td>detailed_foliage</td>
+              <td>Povolení, zakázání  detailní vegetace</td>
+              <td>0, 1</td>
+            </tr>
+            <tr>                       
+              <td>JPEG_screenshots</td>
+              <td>Povolení, zakázání  snímků JPEG</td>
+              <td>0, 1</td>
+            </tr>
+            <tr>                       
+              <td>old_videocard_support</td>
+              <td>Povolení, zakázání starých grafických karet</td>
+              <td>0, 1</td>
+            </tr>
+            <tr>                       
+              <td>sound</td>
+              <td>Obal nastavení zvuku</td>
+              <td>Žádné</td>
+            </tr>
+            <tr>                       
+              <td>volume</td>
+              <td>Povolení, zakázání zvuku</td>
+              <td>0, 1</td>
+            </tr>
+            <tr>                       
+              <td>main</td>
+              <td>Hlasitost hlavního zvuku</td>
+              <td>Žádné</td>
+            </tr>
+            <tr>                       
+              <td>speech</td>
+              <td>Hlasitost řeči</td>
+              <td>Žádné</td>
+            </tr>
+            <tr>                       
+              <td>music</td>
+              <td>Hlasitost hudby</td>
+              <td>Žádné</td>
+            </tr>
+            <tr>                       
+              <td>environment</td>
+              <td>Hlasitost okolí</td>
+              <td>Žádné</td>
+            </tr>
+            <tr>                       
+              <td>voicechat</td>
+              <td>Hlasitost hlasové komunikace</td>
+              <td>0, 1</td>
+            </tr>
+            <tr>                       
+              <td>mode</td>
+              <td>Nastavení hlasové komunikace</td>
+              <td>Žádné</td>
+            </tr>
+            <tr>                       
+              <td>microphone_sensitivity</td>
+              <td>Citlivost mikrofonu</td>
+              <td>Žádné</td>
+            </tr>
+            <tr>                       
+              <td>speech</td>
+              <td>Nastavení jazyku řeči</td>
+              <td>Omezení jazyků "lang"</td>
+            </tr>
+            <tr>                       
+              <td>subtitles</td>
+              <td>Nastavení jazyku titulků</td>
+              <td>Omezení jazyků "lang",0, 1</td>
+            </tr>
+            <tr>                       
+              <td>debug</td>
+              <td>Obal pro nastavení ladění</td>
+              <td>Žádné</td>
+            </tr>
+            <tr>                       
+              <td>render</td>
+              <td>Nastavení vykreslování</td>
+              <td>Žádné</td>
+            </tr>
+            <tr>                       
+              <td>sixfourbit</td>
+              <td>Povolení, zakázání 64- bit</td>
+              <td>Žádné</td>
+            </tr>
+            <tr>                       
+              <td>instancing</td>
+              <td>Povolení, zakázání vytváření instancí</td>
+              <td>Žádné</td>
+            </tr>
+            <tr>                       
+              <td>vr_mode</td>
+              <td>Povolení, zakázání vr módu</td>
+              <td>Žádné</td>
+            </tr>
+            <tr>                       
+              <td>controls</td>
+              <td>Obal pro nastavení ovládání</td>
+              <td>Žádné</td>
+            </tr>
+            <tr>                       
+              <td>input</td>
+              <td>Nastavení ovladačů</td>
+              <td>Žádné</td>
+            </tr>
+            <tr>                       
+              <td>sensitivity</td>
+              <td>Nastavení citlivosti</td>
+              <td>Žádné</td>
+            </tr>
+            <tr>                       
+              <td>inverted_mouse</td>
+              <td>Nastavení převrácené myši</td>
+              <td>Žádné</td>
+            </tr>
+            <tr>                       
+              <td>user</td>
+              <td>Obal pro uživatele</td>
+              <td>Žádné</td>
+            </tr>
+            <tr>                       
+              <td>user_name</td>
+              <td>Jméno uživatele</td>
+              <td>Žádné</td>
+            </tr>
+            <tr>                       
+              <td>fb_login</td>
+              <td>Facebooková adresa uživatele</td>
+              <td>Žádné</td>
+            </tr>
+            <tr>                       
+              <td>fb_password</td>
+              <td>Heslo uživatele k facebooku</td>
+              <td>Žádné</td>
+            </tr>
+          </table>
+          <h3>Atributy</h3>
+          <table border="1" id="atributy" title="Tabulka atributů">
+            <tr>
+              <td><b>Název atributu</b></td>
+              <td><b>Popis atributu</b></td>
+            </tr>
+            <tr>                       
+              <td>version</td>
+              <td>Určuje verzi hry</td>
+            </tr>
+            <tr>                       
+              <td>console</td>
+              <td>Povolení, zakázání konzole</td>
+            </tr>
+            <tr>                       
+              <td>scale</td>
+              <td>Určuje scale okna</td>
+            </tr>
+            <tr>                       
+              <td>port</td>
+              <td>Určuje port</td>
+            </tr> 
+            <tr>                       
+              <td>value</td>
+              <td>Určuje hodnoty</td>
+            </tr> 
+            <tr>                       
+              <td>mode</td>
+              <td>Určuje zvukouvou sestavu</td>
+            </tr> 
+            <tr>                       
+              <td>onOff</td>
+              <td>Omezení - zapnuto, vypnuto</td>
+            </tr> 
+            <tr>                       
+              <td>lang</td>
+              <td>Určuje jazyky</td>
+            </tr> 
+            <tr>                       
+              <td>horizontal</td>
+              <td>Povolení, zakázání horizontálního převrácení myši</td>
+            </tr> 
+            <tr>                       
+              <td>vertical</td>
+              <td>Povolení, zakázání vertikálního převrácení myši</td>
+            </tr>  
+            <tr>                       
+              <td>id</td>
+              <td>Identifikátor pro uživatele</td>
+            </tr> 
+           </table>
+        </article>
+      </section>
+      <section id="transf">
+        <article>
+          <header>
+            <h2>Popis transformace</h2>
+          </header>
+          <p>Transformace pomocí cyklu <code>for-each</code> vybere seznam uživatelů z xml.Transformace dále obsahuje podmínku na konci for each cyklu, která for cykl ukončí, když je přečten poslední záznam.</p>
+        </article>
+      </section>
+      <section id="zaver">
+        <article>
+          <header>
+            <h2>Závěr</h2>
+          </header>
+          <p>Tato semestrální práce pro mě byla velmi zajímavá. Vyzkoušel jsem si poprvé práci s XML, který si myslím, že ještě v budoucnu použiji. Nastavení aplikace Warthunder je zdaleka větší a obsáhlejší, ale z důvodu rozsahů semestralní práce, bylo nastavení zkráceno. </p>
+        </article>
+      </section>
+    </main>
+    <footer>
+    <p>Autor: <strong>Václav Studený, xstuv003</strong> | Česká Zemědělská univerzita Praha, dne 17.4.2017</p>
+    </footer>
+    </div>
+  </body>
+</html>
