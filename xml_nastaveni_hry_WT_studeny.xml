@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settings>
+    <preset1>
+        <game version="1.67.2.95" console="false">
+                <ui scale="1.0" />
+                <units>Metric</units>
+        </game>
+        <multiplayer port="80s00">
+            <chat>0</chat>
+            <server>EU</server>
+            <maxping>120</maxping>
+        </multiplayer>
+        <graphics>
+                <display>
+                        <resolution>1080p</resolution>
+                        <mode>fullWindow</mode>
+                        <gamma value="50" />
+                        <brightness value='50' />
+                        <colorblind_mode>0</colorblind_mode>
+                        <vertical_sync>0</vertical_sync>
+                </display>
+                <anisotropy>16x</anisotropy>
+                <anti_aliasing>hqFxaa</anti_aliasing>    
+                <texture_quality>high</texture_quality>
+                <shadow_quality>veryHigh</shadow_quality>
+                <terrain_quality>high</terrain_quality>
+                <render_resolution value="50"/>
+                <terrain_quality value="30"/>
+                <tree_range value="30"/>
+                <particle_density value="30"/>
+                <grass value="30"/>
+                <ssao_quality value="50"/>
+                <reflections_quality value="50"/>
+                <water_reflections value="15"/>
+                <terrain_deformation>veryHigh</terrain_deformation>
+                <tire_tracks>veryHigh</tire_tracks>
+                <foam_quality>low</foam_quality>
+                <cloud_quality value="50"/>
+                <clouds value="50"/>
+                <physics_quality value="50"/>
+                <shadows>1</shadows>
+                <object_shadows>1</object_shadows>
+                <advanced_shore>1</advanced_shore>
+                <fx_reflections>1</fx_reflections>
+                <ripple_effect>1</ripple_effect>
+                <haze>1</haze>
+                <soft_particles>1</soft_particles>
+                <terrain_far_details>1</terrain_far_details>
+                <lens_flares>1</lens_flares>
+                <suspension_animation>1</suspension_animation>
+                <detailed_foliage>1</detailed_foliage>
+                <JPEG_screenshots>1</JPEG_screenshots>
+                <old_videocard_support>0</old_videocard_support>
+        </graphics>
+        <sound mode="5.1">
+
+                <volume onOff="1">
+                        <main>100</main>
+                        <speech>78</speech>
+                        <music>10</music>
+                        <environment>100</environment>
+                </volume>
+                <voicechat onOff="1">
+                        <volume>33</volume>
+                        <mode>Push-to-talk</mode>
+                        <microphone_sensitivity>33</microphone_sensitivity>
+                </voicechat>
+                <speech lang="EN" />
+                <subtitles lang="EN">1</subtitles>
+        </sound>
+        <debug>
+            <render>auto</render>
+            <sixfourbit>auto</sixfourbit>
+            <instancing>
+                <vr_mode>0</vr_mode>
+            </instancing>
+        </debug>
+        <controls>
+                <input>Keyboard and Mouse</input>
+                <sensitivity>5.6</sensitivity>
+                <inverted_mouse horizontal="false" vertical="false" />
+        </controls>
+    </preset1>
+        <user id="1" value="preset1">
+                <user_name>Johnny123</user_name>
+                <fb_login>john@gmail.com</fb_login>
+                <fb_password>0987654321</fb_password>
+        </user>
+        <user id="2" value="preset1">
+                <user_name>theRealYes</user_name>
+                <fb_login>jambo@gmail.com</fb_login>
+                <fb_password>9867546789</fb_password>
+        </user>
+        <user id="3" value="preset1">
+                <user_name>Plucko</user_name>
+                <fb_login>adamko@gmail.com</fb_login>
+                <fb_password>2638940389</fb_password>
+        </user>
+        <user id="4" value="preset1">
+                <user_name>Hakky</user_name>
+                <fb_login>jurca@gmail.com</fb_login>
+                <fb_password>5789657890</fb_password>
+        </user>
+        <user id="5" value="preset1">
+                <user_name>Devil</user_name>
+                <fb_login>Erik@gmail.com</fb_login>
+                <fb_password>1256546789</fb_password>
+        </user>
+ </settings>
+	

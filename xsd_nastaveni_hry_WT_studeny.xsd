@@ -1,0 +1,306 @@
+
+<!-- Odkaz na github: https://github.com/xstuv003/znackovaci_jazyky -->
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="settings">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="preset1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="game">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="ui">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:float" name="scale"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element type="xs:string" name="units"/>
+                  </xs:sequence>
+                  <xs:attribute type="xs:string" name="version"/>
+                  <xs:attribute type="xs:string" name="console"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="multiplayer">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="onoff" name="chat"/>
+                    <xs:element type="xs:string" name="server"/>
+                    <xs:element type="xs:byte" name="maxping"/>
+                  </xs:sequence>
+                  <xs:attribute type="xs:string" name="port"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="graphics">
+                <xs:complexType>
+                    <xs:element name="display">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="resolution"/>
+                          <xs:element type="xs:string" name="mode"/>
+                          <xs:element name="gamma">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:integer">
+                                  <xs:attribute type="val" name="value"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="brightness">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:integer">
+                                  <xs:attribute type="val" name="value"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element type="onoff" name="colorblind_mode"/>
+                          <xs:element type="onoff" name="vertical_sync"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element type="xs:string" name="anisotropy"/>
+                    <xs:element type="xs:string" name="anti_aliasing"/>
+                    <xs:element type="xs:string" name="texture_quality"/>
+                    <xs:element type="xs:string" name="shadow_quality"/>
+                    <xs:element type="xs:string" name="terrain_quality"/>
+                    <xs:element name="render_resolution">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:integer">
+                            <xs:attribute type="val" name="value" use="optional"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="tree_range">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:integer">
+                            <xs:attribute type="val" name="value"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="particle_density">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:integer">
+                            <xs:attribute type="val" name="value"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="grass">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:integer">
+                            <xs:attribute type="val" name="value"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="ssao_quality">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:integer">
+                            <xs:attribute type="val" name="value"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="reflections_quality">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:integer">
+                            <xs:attribute type="val" name="value"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="water_reflections">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:integer">
+                            <xs:attribute type="val" name="value"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element type="xs:string" name="terrain_deformation"/>
+                    <xs:element type="xs:string" name="tire_tracks"/>
+                    <xs:element type="xs:string" name="foam_quality"/>
+                    <xs:element name="cloud_quality">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:integer">
+                            <xs:attribute type="val" name="value"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="clouds">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:integer">
+                            <xs:attribute type="val" name="value"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="physics_quality">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:integer">
+                            <xs:attribute type="val" name="value"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element type="onoff" name="shadows"/>
+                    <xs:element type="onoff" name="object_shadows"/>
+                    <xs:element type="onoff" name="advanced_shore"/>
+                    <xs:element type="onoff" name="fx_reflections"/>
+                    <xs:element type="onoff" name="ripple_effect"/>
+                    <xs:element type="onoff" name="haze"/>
+                    <xs:element type="onoff" name="soft_particles"/>
+                    <xs:element type="onoff" name="terrain_far_details"/>
+                    <xs:element type="onoff" name="lens_flares"/>
+                    <xs:element type="onoff" name="suspension_animation"/>
+                    <xs:element type="onoff" name="detailed_foliage"/>
+                    <xs:element type="onoff" name="JPEG_screenshots"/>
+                    <xs:element type="onoff" name="old_videocard_support"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="sound">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="volume">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:byte" name="main"/>
+                          <xs:element type="xs:byte" name="speech"/>
+                          <xs:element type="xs:byte" name="music"/>
+                          <xs:element type="xs:byte" name="environment"/>
+                        </xs:sequence>
+                        <xs:attribute type="onoff" name="onOff"/>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="voicechat">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:byte" name="volume"/>
+                          <xs:element type="xs:string" name="mode"/>
+                          <xs:element type="xs:byte" name="microphone_sensitivity"/>
+                        </xs:sequence>
+                        <xs:attribute type="onoff" name="onOff"/>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="speech">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="lang" name="lang"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="subtitles">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="lang" name="lang"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute type="xs:float" name="mode"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="debug">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="onoff" name="render"/>
+                    <xs:element type="onoff" name="sixfourbit"/>
+                    <xs:element name="instancing">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="onoff" name="vr_mode"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="controls">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="input"/>
+                    <xs:element type="xs:float" name="sensitivity"/>
+                    <xs:element name="inverted_mouse">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="horizontal"/>
+                            <xs:attribute type="xs:string" name="vertical"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="user" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="nameL" name="user_name"/>
+              <xs:element type="xs:string" name="fb_login"/>
+              <xs:element type="xs:long" name="fb_password"/>
+            </xs:sequence>
+            <xs:attribute type="xs:byte" name="id" use="required"/>
+            <xs:attribute type="xs:string" name="value" use="required"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <!-- restriction-->
+<xs:simpleType name="onoff"> <!-- onoff -->
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="0"/>
+      <xs:maxInclusive value="1"/>
+    </xs:restriction>
+  </xs:simpleType> 
+  <xs:simpleType name="lang"> <!-- langs -->
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="CZ"/>
+      <xs:enumeration value="EN"/>
+      <xs:enumeration value="US"/>
+      <xs:enumeration value="PL"/>
+      <xs:enumeration value="DE"/>
+      <xs:enumeration value="FR"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="nameL"><!-- name lengh-->
+    <xs:restriction base="xs:string">
+    	<xs:minLength value="2"/>
+      	<xs:maxLength value="30"/>
+    </xs:restriction>
+  </xs:simpleType> 
+  <xs:simpleType name="val"> <!-- %% -->
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="0"/>
+      <xs:maxInclusive value="100"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>
